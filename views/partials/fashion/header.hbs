@@ -1,0 +1,77 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://use.typekit.net/kcx1dpq.css">
+
+<div class="header-wrapper header-wrapper--fixed {{headerAdditionalClasses}}" id="header-wrapper" data-ms-theme="fashion">
+  {{#if flash.enabled}}
+    {{> components/flash}}
+  {{/if}}
+
+  <header class="header">
+    <div class="content">
+      <span class="header-menu__icon"></span>
+
+      <a class="header-logo" href="/" title="A loja brinquedo">
+        <img class="header-logo__image" src="https://i.postimg.cc/mDfPqk7v/logo-brinquedo.png" alt="Logo da A loja brinquedo" title="A loja brinquedo" loading="lazy">
+      </a>
+
+      <ul class="menu">
+        <li class="menu-main">
+          <a class="menu-main__href" href="https://www.alojadebrinquedos.com.br/lista/brinquedos-hobbies/bonecas">Barbie</a>
+        </li>
+        <li class="menu-main">
+          <a class="menu-main__href" href="https://www.alojadebrinquedos.com.br/lista/brinquedos-hobbies/bonecos-bonecas/bonecos-figuras-acao/">Funko</a>
+        </li>
+        <li class="menu-main">
+          <a class="menu-main__href" href="https://www.alojadebrinquedos.com.br/lista/brinquedos-hobbies/veiculos-brinquedo/_brand_428690">Hot Wheels</a>
+        </li>
+        <li class="menu-main">
+          <a class="menu-main__href" href="https://www.alojadebrinquedos.com.br/lista/brinquedos-hobbies/pelucias/">Pelúcias</a>
+        </li>
+        <li class="menu-main">
+          <a class="menu-main__href" href="https://www.alojadebrinquedos.com.br/lista/brinquedos-hobbies/casinhas-barracas/">Barracas</a>
+        </li>
+        <li class="menu-main">
+          <a class="menu-main__href" href="https://www.alojadebrinquedos.com.br/lista/brinquedos-hobbies/brinquedos-montar/">Playmobil</a>
+        </li>
+      </ul>
+
+      <form class="BoxBuscaPopUp" id="search-form" novalidate="">
+        <input type="text" class="nav-search-input header--custom-border" placeholder="Pesquisa" id="search-input" required="" autocomplete=" off">
+        <button class="search__mobile search-close">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+            <g id="Ícone_Menu_Fechar" data-name="Ícone Menu Fechar" transform="translate(-616 -10)">
+              <g id="Ícone_Menu_Fechar-2" data-name="Ícone Menu Fechar" transform="translate(108 3)">
+                <g id="close-2" transform="translate(508 7)">
+                  <path id="Caminho_462" data-name="Caminho 462" d="M8.827,7.5l5.9-5.9A.938.938,0,0,0,13.4.275l-5.9,5.9L1.6.275A.938.938,0,1,0,.275,1.6l5.9,5.9-5.9,5.9A.938.938,0,1,0,1.6,14.725l5.9-5.9,5.9,5.9A.938.938,0,0,0,14.725,13.4Z" transform="translate(0 0)" fill="#FFF"></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </form>
+
+      <ul class="header-icons">
+        <li class="header-icons__icon">
+          <span class="header-icon header-icons__search" title="Pesquisar"></span>
+        </li>
+        <li class="header-icons__icon">
+          <a class="header-icon header-icons__email" href="/p/contato"></a>
+        </li>
+        <li class="header-icons__icon">
+          <a class="header-icon header-icons__cart" href="/gz/cart"></a>
+        </li>
+        <li class="header-icons__icon">
+          <a class="header-icon header-icons__user" href="https://myaccount.mercadolivre.com.br/my_purchases/list"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+</div>
+<div id="overlay"></div>
+
+{{#if bannerStyles}}
+  <div class="nav-header__banner" style="display: none !important;">
+      <div itemtype="http://schema.org/ImageObject" class="nav-header__banner-image" style="{{bannerStyles}}" itemscope></div>
+  </div>
+{{/if}}
